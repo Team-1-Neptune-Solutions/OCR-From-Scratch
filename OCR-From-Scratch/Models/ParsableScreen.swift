@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ParsableScreen {
+protocol ParsableScreen: Identifiable {
     var description: String { get set }
     func parse() -> Void
 }

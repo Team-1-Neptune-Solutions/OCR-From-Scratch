@@ -10,6 +10,7 @@
 		070B4989298A01710013CD2A /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B4988298A01710013CD2A /* ResultsView.swift */; };
 		070B498C298A025E0013CD2A /* ParsableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B498B298A025E0013CD2A /* ParsableScreen.swift */; };
 		070B4991298A06F30013CD2A /* MPChillCompScreenOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B4990298A06F30013CD2A /* MPChillCompScreenOne.swift */; };
+		070B4993298A0B2A0013CD2A /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B4992298A0B2A0013CD2A /* ScannerView.swift */; };
 		3EFF623C29846C0D006BD3F0 /* OCR_From_ScratchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF623B29846C0D006BD3F0 /* OCR_From_ScratchApp.swift */; };
 		3EFF623E29846C0D006BD3F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF623D29846C0D006BD3F0 /* ContentView.swift */; };
 		3EFF624029846C0F006BD3F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EFF623F29846C0F006BD3F0 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		070B4988298A01710013CD2A /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		070B498B298A025E0013CD2A /* ParsableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableScreen.swift; sourceTree = "<group>"; };
 		070B4990298A06F30013CD2A /* MPChillCompScreenOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPChillCompScreenOne.swift; sourceTree = "<group>"; };
+		070B4992298A0B2A0013CD2A /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		3EFF623829846C0D006BD3F0 /* OCR-From-Scratch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR-From-Scratch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EFF623B29846C0D006BD3F0 /* OCR_From_ScratchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCR_From_ScratchApp.swift; sourceTree = "<group>"; };
 		3EFF623D29846C0D006BD3F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				070B4988298A01710013CD2A /* ResultsView.swift */,
+				070B4992298A0B2A0013CD2A /* ScannerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				3EFF623E29846C0D006BD3F0 /* ContentView.swift in Sources */,
 				070B4991298A06F30013CD2A /* MPChillCompScreenOne.swift in Sources */,
 				070B498C298A025E0013CD2A /* ParsableScreen.swift in Sources */,
+				070B4993298A0B2A0013CD2A /* ScannerView.swift in Sources */,
 				070B4989298A01710013CD2A /* ResultsView.swift in Sources */,
 				3EFF623C29846C0D006BD3F0 /* OCR_From_ScratchApp.swift in Sources */,
 			);
@@ -298,6 +302,7 @@
 				DEVELOPMENT_TEAM = D3U3DVG23T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "${PRODUCT_NAME} requires permission to scan text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,6 +332,7 @@
 				DEVELOPMENT_TEAM = D3U3DVG23T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "${PRODUCT_NAME} requires permission to scan text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -7,7 +7,8 @@
 
 import Foundation
 
-class MPChillCompScreenOne: ParsableScreen, Identifiable {
+struct MPChillCompScreenOne: ParsableScreen, Identifiable {
+    var id = UUID()
     var description = "Main Plant Chiller Compressor Page 1"
     
     func parse() {
