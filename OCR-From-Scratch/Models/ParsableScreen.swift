@@ -9,5 +9,5 @@ import Foundation
 
 protocol ParsableScreen: Identifiable {
     var description: String { get set }
-    func parse() -> Void
+    func parse(results: [String]) -> String
 }

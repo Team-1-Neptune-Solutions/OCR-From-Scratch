@@ -6,15 +6,18 @@
 //
 
 import SwiftUI
+import Vision
 
 struct ResultsView: View {
+    @Binding var results: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(results)
     }
 }
 
-struct ResultsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ResultsView()
-    }
-}
+//struct ResultsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ResultsView()
+//    }
+//}

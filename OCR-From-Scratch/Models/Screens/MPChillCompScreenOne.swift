@@ -11,8 +11,14 @@ struct MPChillCompScreenOne: ParsableScreen {
     var id = UUID()
     var description = "Main Plant Chiller Compressor Page 1"
     
-    func parse() {
-        // TODO: Figure out which type needs to be returned and write logic
-        print("Parsing screen...")
+    func parse(results: [String]) -> String {
+        var parsedResults = ""
+        print("--- PRINTING RESULTS ---")
+        for result in results {
+            parsedResults += "\(result)\n"
+        }
+        
+        print(parsedResults)
+        return parsedResults
     }
 }
