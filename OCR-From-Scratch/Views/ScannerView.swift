@@ -27,16 +27,19 @@ struct ScannerView: UIViewControllerRepresentable {
         
         func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
             print("Document camera view controller did finish with ", scan)
-            controller.dismiss(animated: true)
+            controller.dismiss(animated: true) {
+                let image = scan.imageOfPage(at: 0)
+                self.parent.scannedImage = image
+            }
         }
         
         func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFailWithError error: Error) {
-            print("did fail with error")
+            print("CameraViewController failed with error: \(error)")
             controller.dismiss(animated: true)
         }
         
         func documentCameraViewControllerDidCancel(_ controller: VNDocumentCameraViewController) {
-            print("did cancel fired")
+            print("User cancelled taking photo")
             controller.dismiss(animated: true)
         }
     }
@@ -47,7 +50,7 @@ struct ScannerView: UIViewControllerRepresentable {
         return Coordinator(self)
     }
     
-//    @Binding var cameraScan: VNDocumentCameraScan
+    @Binding var scannedImage: UIImage?
     
     // SwiftUI calls this method a single time when it’s ready to display the view
     // then manages the view controller’s life cycle.
