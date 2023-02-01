@@ -16,7 +16,11 @@ struct ContentView: View {
         NavigationStack {
             List(screens) { screen in
                 NavigationLink(screen.description) {
-                    ResultsView()
+                    ScannerView(completion: { results in
+                        if let results {
+                            print(results)
+                        }
+                    })
                 }
             }
         }
@@ -28,8 +32,4 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
-
-extension ContentView {
-    
 }
