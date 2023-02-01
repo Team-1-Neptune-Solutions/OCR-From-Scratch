@@ -10,21 +10,21 @@ import VisionKit
 import Vision
 
 struct ContentView: View {
+    @State private var showingScanner = false
+    
     let screens = [MPChillCompScreenOne()]
     
     var body: some View {
-        NavigationStack {
+        VStack {
             List(screens) { screen in
-                NavigationLink(screen.description) {
-                    ScannerView(completion: { results in
-                        if let results {
-                            print(results)
-                        }
-                    })
+                Button(screen.description) {
+                    showingScanner = true
                 }
             }
         }
-        .navigationTitle("HMI Scanner Demo")
+        .sheet(isPresented: $showingScanner) {
+            ScannerView()
+        }
     }
 }
 
