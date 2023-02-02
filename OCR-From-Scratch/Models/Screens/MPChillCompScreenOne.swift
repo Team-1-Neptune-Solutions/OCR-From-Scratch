@@ -7,9 +7,7 @@
 
 import Foundation
 
-struct MPChillCompScreenOne: ParsableScreen {
-    var id = UUID()
-    var description = "Main Plant Chiller Compressor Page 1"
+class MPChillCompScreenOne: Screen {
     
     let labels = [
         "Compressor Starts",
@@ -18,19 +16,23 @@ struct MPChillCompScreenOne: ParsableScreen {
         "Oil Differential Pressure"
     ]
     
+    override init(description: String) {
+        super.init(description: description)
+    }
+    
     // WP Note - We need these values:
     // Compressor Starts
     // Running Time
     // Oil Tank Discharge Pressure
     // Oil Differential Pressure
     
-    func parse(results: [String]) -> String {
+    override func parse(results: [String]) -> String {
         var myValues = [String]()
         var ourFloats = [Float]()
         
         var parsedResults = ""
         print("--- PRINTING RESULTS ---")
-        for (index, result) in results.enumerated() {
+        for result in results {
             if result.contains("Min") {
                 myValues.append(result)
             } else if result.contains("PSIG") {

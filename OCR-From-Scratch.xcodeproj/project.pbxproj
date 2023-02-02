@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		070B4989298A01710013CD2A /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B4988298A01710013CD2A /* ResultsView.swift */; };
-		070B498C298A025E0013CD2A /* ParsableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B498B298A025E0013CD2A /* ParsableScreen.swift */; };
 		070B4991298A06F30013CD2A /* MPChillCompScreenOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B4990298A06F30013CD2A /* MPChillCompScreenOne.swift */; };
 		070B4993298A0B2A0013CD2A /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B4992298A0B2A0013CD2A /* ScannerView.swift */; };
 		070B49A2298B17AE0013CD2A /* TextScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B49A1298B17AE0013CD2A /* TextScanner.swift */; };
@@ -16,11 +15,13 @@
 		3EFF623E29846C0D006BD3F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF623D29846C0D006BD3F0 /* ContentView.swift */; };
 		3EFF624029846C0F006BD3F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EFF623F29846C0F006BD3F0 /* Assets.xcassets */; };
 		3EFF624329846C0F006BD3F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EFF624229846C0F006BD3F0 /* Preview Assets.xcassets */; };
+		4AAE92E2298C32210068CF45 /* AbsorptionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE92E1298C32210068CF45 /* AbsorptionHome.swift */; };
+		4AAE92E4298C56B90068CF45 /* ScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE92E3298C56B90068CF45 /* ScreenFactory.swift */; };
+		4AAE92E6298C58570068CF45 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE92E5298C58570068CF45 /* Screen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		070B4988298A01710013CD2A /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
-		070B498B298A025E0013CD2A /* ParsableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableScreen.swift; sourceTree = "<group>"; };
 		070B4990298A06F30013CD2A /* MPChillCompScreenOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPChillCompScreenOne.swift; sourceTree = "<group>"; };
 		070B4992298A0B2A0013CD2A /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		070B49A1298B17AE0013CD2A /* TextScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextScanner.swift; sourceTree = "<group>"; };
@@ -29,6 +30,9 @@
 		3EFF623D29846C0D006BD3F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3EFF623F29846C0F006BD3F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EFF624229846C0F006BD3F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4AAE92E1298C32210068CF45 /* AbsorptionHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsorptionHome.swift; sourceTree = "<group>"; };
+		4AAE92E3298C56B90068CF45 /* ScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenFactory.swift; sourceTree = "<group>"; };
+		4AAE92E5298C58570068CF45 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				070B49A0298AC7610013CD2A /* Screens */,
-				070B498B298A025E0013CD2A /* ParsableScreen.swift */,
+				4AAE92E3298C56B90068CF45 /* ScreenFactory.swift */,
+				4AAE92E5298C58570068CF45 /* Screen.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -72,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				070B4990298A06F30013CD2A /* MPChillCompScreenOne.swift */,
+				4AAE92E1298C32210068CF45 /* AbsorptionHome.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -185,12 +191,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				070B49A2298B17AE0013CD2A /* TextScanner.swift in Sources */,
+				4AAE92E2298C32210068CF45 /* AbsorptionHome.swift in Sources */,
 				3EFF623E29846C0D006BD3F0 /* ContentView.swift in Sources */,
 				070B4991298A06F30013CD2A /* MPChillCompScreenOne.swift in Sources */,
-				070B498C298A025E0013CD2A /* ParsableScreen.swift in Sources */,
+				4AAE92E6298C58570068CF45 /* Screen.swift in Sources */,
 				070B4993298A0B2A0013CD2A /* ScannerView.swift in Sources */,
 				070B4989298A01710013CD2A /* ResultsView.swift in Sources */,
 				3EFF623C29846C0D006BD3F0 /* OCR_From_ScratchApp.swift in Sources */,
+				4AAE92E4298C56B90068CF45 /* ScreenFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OCR-From-Scratch/Preview Content\"";
-				DEVELOPMENT_TEAM = 64H6U72Q6B;
+				DEVELOPMENT_TEAM = V94L67MHG8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "${PRODUCT_NAME} requires permission to scan text.";
@@ -328,6 +336,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,7 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OCR-From-Scratch/Preview Content\"";
-				DEVELOPMENT_TEAM = 64H6U72Q6B;
+				DEVELOPMENT_TEAM = V94L67MHG8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "${PRODUCT_NAME} requires permission to scan text.";
@@ -358,6 +367,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

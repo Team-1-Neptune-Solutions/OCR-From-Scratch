@@ -14,9 +14,9 @@ struct ContentView: View {
     @State private var showingResults = false
     @State private var scannedImage: UIImage?
     @State private var parsedResults = "Default results"
-    @State var currentScreen: (any ParsableScreen)?
+    @State var currentScreen: Screen?
     
-    let screens = [MPChillCompScreenOne()]
+    private var screens = ScreenFactory.all
     
     
     var body: some View {

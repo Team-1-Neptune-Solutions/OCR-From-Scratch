@@ -27,10 +27,13 @@ struct ScannerView: UIViewControllerRepresentable {
         
         func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
             print("Document camera view controller did finish with ", scan)
-            controller.dismiss(animated: true) {
-                let image = scan.imageOfPage(at: 0)
-                self.parent.scannedImage = image
+            if(scan.pageCount == 1){
+                controller.dismiss(animated: true) {
+                    let image = scan.imageOfPage(at: 0)
+                    self.parent.scannedImage = image
+                }
             }
+            
         }
         
         func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFailWithError error: Error) {
