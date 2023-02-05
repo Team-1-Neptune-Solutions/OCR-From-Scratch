@@ -16,12 +16,12 @@ struct ContentView: View {
     @State private var parsedResults = "Default results"
     @State var currentScreen: (any ParsableScreen)?
     
-    let screens = [MPChillCompScreenOne()]
+    let screens:[any ParsableScreen] = [MPChillCompScreenOne(),AbsorptionChiller()]
     
     
     var body: some View {
         VStack {
-            List(screens) { screen in
+            List(screens, id: \.id) { screen in
                 Button(screen.description) {
                     currentScreen = screen
                     showingScanner = true

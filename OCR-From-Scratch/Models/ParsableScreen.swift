@@ -7,7 +7,8 @@
 
 import Foundation
 
-protocol ParsableScreen: Identifiable {
-    var description: String { get set }
+protocol ParsableScreen {
+    var id : String { get }
+    var description: String { get }
     func parse(results: [String]) -> String
 }

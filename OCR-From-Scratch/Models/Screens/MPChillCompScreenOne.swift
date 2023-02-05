@@ -8,10 +8,10 @@
 import Foundation
 
 struct MPChillCompScreenOne: ParsableScreen {
-    var id = UUID()
-    var description = "Main Plant Chiller Compressor Page 1"
+    let id = UUID().uuidString
+    let description = "Main Plant Chiller Compressor Page 1"
     
-    let labels = [
+    private let labels = [
         "Compressor Starts",
         "Running Time",
         "Oil Tank Discharge Pressure",
@@ -30,7 +30,7 @@ struct MPChillCompScreenOne: ParsableScreen {
         
         var parsedResults = ""
         print("--- PRINTING RESULTS ---")
-        for (index, result) in results.enumerated() {
+        for result in results{
             if result.contains("Min") {
                 myValues.append(result)
             } else if result.contains("PSIG") {
