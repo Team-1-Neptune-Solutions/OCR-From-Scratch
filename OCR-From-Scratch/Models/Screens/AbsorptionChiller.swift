@@ -18,9 +18,10 @@ struct AbsorptionChiller: ParsableScreen {
         for result in results {
             if let value = Double(result){
                 values.append(value)
-                parsedResults += "\(result)\n"
+                parsedResults += "\(result),"
             }
         }
+        print(parsedResults)
         return parsedResults
     }
 }
